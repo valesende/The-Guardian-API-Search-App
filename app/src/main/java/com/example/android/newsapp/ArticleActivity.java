@@ -25,7 +25,8 @@ public class ArticleActivity extends AppCompatActivity
     //constant variable for the article loader ID, only used if there are multiple loaders
     private static final int ARTICLE_LOADER_ID = 1;
 
-    private static final String JSON_URL = "http://content.guardianapis.com/search?q=science&api-key=test";
+    private static final String JSON_URL = "http://content.guardianapis.com/search?q=science&" +
+            "order-by=newest&api-key=test";
 
     //adapter for article list
     private ArticleAdapter mAdadpter;
